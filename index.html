@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+<!-- tailwind and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header>
+<!-- nav bar -->
+        <div class="navbar lg:w-[90%] mx-auto my-8 lg:px-8 bg-[#E7F4FB] bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+              </div>
+<!-- for title -->
+              <div>
+                <h1 class="text-4xl font-bold">Interactive</h1>
+                <h2 class="text-3xl font-normal">Geometry Genius</h2>
+              </div>
+            </div>
+<!--for blog btn  -->
+            <div class="navbar-end">
+              <button  class="btn border-none px-8 bg-[#1090D8] hover:bg-green-700 " type="submit" onclick="window.location.href='blog.html';">Blog</button>
+            </div>
+          </div>
+    </header>
+<!-- card section -->
+    <main>
+        <section class="lg:px-12 flex flex-col lg:flex-row">
+            <div class="w-full lg:w-[65%] mt-5 grid lg:grid-cols-3 gap-8">
+<!------------------------
+    for Triangle
+-------------------------->
+                <div class="card w-full bg-base-100 border-2 rounded-none " id="triangle">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/triangle.png"/>
+                    </figure>
+<!-- for title and structure -->
+                    <div class="card-body items-center text-center">
+                      <h2 id="triangle-title" class="card-title">Triangle</h2>
+                      <p>Area (A) = 0.5 X b X h</p>
+<!--for input field -->
+                      <div class="mt-4">
+                        <input id="first-triangle-input" class="input input-bordered w-20 h-8 " type="text" placeholder="b"> cm &nbsp;
+                        <input id="second-triangle-input" class="input input-bordered w-20 h-8" type="text" placeholder="h"> cm 
+                      </div>
+<!--for Calculate btn -->
+                      <div class="card-actions mt-7">
+                        <button id="triangle-btn" class="w-[220px] h-10 bg-[#1090D8] text-white font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+<!------------------------
+    for Rectangle
+-------------------------->                  
+                <div class="card w-full bg-base-100 border-2 rounded-none" id="rectangle">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/rectangle.png" />
+                    </figure>
+<!-- for title and structure -->
+                    <div class="card-body items-center text-center">
+                      <h2 id="ractangle-title" class="card-title">Rectangle</h2>
+                      <p>Area (A) = w X I</p>
+<!--for input field -->
+                      <div class="mt-4">
+                        <input id="ractangle-first-input" class="input input-bordered w-20 h-8 " type="text" placeholder="w"> cm &nbsp;
+                        <input id="ractangle-second-input" class="input input-bordered w-20 h-8" type="text" placeholder="l"> cm 
+                      </div>
+<!--for Calculate btn -->
+                      <div class="card-actions mt-7">
+                        <button id="rectangle-btn" class="w-[220px] h-10 bg-[#1090D8] text-white font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+<!------------------------
+    for Parallelogram
+-------------------------->
+                <div class="card w-full bg-base-100 border-2 rounded-none">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/parallelogram.png" />
+                    </figure>
+<!-- for title and structure -->
+                    <div class="card-body items-center text-center">
+                      <h2 id="parallelogram-title" class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b X h</p>
+<!--for input field -->
+                      <div class="mt-4">
+                        <input id="parallelogram-first-input" class="input input-bordered w-20 h-8 " type="text" placeholder="b"> cm &nbsp;
+                        <input id="parallelogram-second-input" class="input input-bordered w-20 h-8" type="text" placeholder="h"> cm 
+                      </div>
+<!--for Calculate btn -->
+                      <div class="card-actions mt-7">
+                        <button id="parallelogram-btn" class="w-[220px] h-10 bg-[#1090D8] text-white font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+<!------------------------
+    for Rhombus
+-------------------------->                  
+                <div class="card w-full bg-base-100 border-2 rounded-none">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/rhombus.png" />
+                    </figure>
+<!-- for title and structure -->
+                    <div class="card-body items-center text-center">
+                      <h2 id="rhombus-title" class="card-title">Rhombus</h2>
+                      <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+<!--for input field -->
+                      <div class="mt-4">
+                        <input id="rhombus-first-input" class="input input-bordered w-20 h-8 " type="text" placeholder=" d1"> cm &nbsp;
+                        <input id="rhombus-second-input" class="input input-bordered w-20 h-8" type="text" placeholder="d2"> cm 
+                      </div>
+<!--for Calculate btn -->
+                      <div class="card-actions mt-7">
+                        <button id="rhombus-btn" class="w-[220px] h-10 bg-[#1090D8] text-white font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+<!------------------------
+    for Pentagon
+-------------------------->                  
+                <div class="card w-full bg-base-100 border-2 rounded-none">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/pentagon.png" />
+                    </figure>
+<!-- for title and structure -->
+                    <div class="card-body items-center text-center">
+                      <h2 id="pentagon-title" class="card-title">Pentagon</h2>
+                      <p>Area (A) = 0.5 X p X b</p>
+<!--for input field -->
+                      <div class="mt-4">
+                        <input id="pentagon-first-input" class="input input-bordered w-20 h-8 " type="text" placeholder="p"> cm &nbsp;
+                        <input id="pentagon-second-input" class="input input-bordered w-20 h-8" type="text" placeholder="b"> cm 
+                      </div>
+<!--for Calculate btn -->
+                      <div class="card-actions mt-7">
+                        <button id="pentagon-btn" class="w-[220px] h-10 bg-[#1090D8] text-white font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+<!------------------------
+    for Ellipse
+-------------------------->                  
+                <div class="card w-full bg-base-100 border-2 rounded-none">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/ellipse.png" />
+                    </figure>
+<!-- for title and structure -->
+                    <div class="card-body items-center text-center">
+                      <h2 id="ellipse-title" class="card-title">Ellipse</h2>
+                      <p>Area (A) = πab</p>
+<!--for input field -->
+                      <div class="mt-4">
+                        <input id="ellipse-first-input" class="input input-bordered w-20 h-8 " type="text" placeholder="a"> cm &nbsp;
+                        <input id="ellipse-second-input" class="input input-bordered w-20 h-8" type="text" placeholder="b"> cm 
+                      </div>
+<!--for Calculate btn -->
+                      <div class="card-actions mt-7">
+                        <button id="ellipse-btn" class="w-[220px] h-10 bg-[#1090D8] text-white font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+<!--for Area Calculation Section -->
+            <div class="w-full lg:w-[30%] lg:ml-20 border-2 h-fit mt-5  mx-auto">
+                <h1 class="text-3xl text-center font-bold underline mt-5 mb-8">Area Calculation</h1>
+<!-- for table body -->
+                <div>
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                        
+
+                          <tbody id="area-container">
+                            <!-- <tr>
+                              <th>1</th>
+                              <td>triangle</td>
+                              <td>180cm</td>
+                              <td><button class="btn bg-red-400">Covert to m<sup>2</sup></button></td>
+                            </tr> -->
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<!-- js link -->
+    <script src="js/app.js"></script>
+<!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/95e38b96e0.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
